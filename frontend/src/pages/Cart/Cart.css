@@ -1,0 +1,81 @@
+.cart {
+  margin-top: 100px;
+}
+.cart-items {
+  width: 100%;
+  overflow-x: auto; /* Added this line to enable horizontal scrolling */
+}
+
+.cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  color: gray;
+  min-width: 800px;
+}
+
+.cart-items-list {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  margin: 10px 0pc;
+  align-items: center;
+  min-width: 800px;
+}
+
+.cart-item-img {
+  width: 50px;
+  height: 50px;
+}
+
+.remove-icon {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+.cart-items-list hr {
+  width: 100%;
+}
+
+.cart-total {
+  width: 50%;
+}
+
+.cart-total h1 {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.cart-total-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.cart-total-items:nth-child(8) {
+  font-weight: bold;
+}
+
+.cart-total button {
+  width: 150px;
+  border: 1px solid tomato;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.cart-total button:hover {
+  background-color: tomato;
+  color: white;
+}
+
+@media (max-width: 786px) {
+  .cart-total {
+    width: 100%;
+  }
+}
+
+.cart-items::-webkit-scrollbar {
+  display: none;
+}

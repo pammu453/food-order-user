@@ -1,0 +1,63 @@
+.place-order {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.place-order-left {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.place-order-left h1 {
+  font-size: 30px;
+}
+
+.multi-fields {
+  display: flex;
+  gap: 8px;
+}
+
+.multi-fields input {
+  width: 50%;
+}
+
+.place-order-left input {
+  padding: 10px 10px;
+  margin: 10px 0px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.place-order-right {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.place-order-cart-total {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.place-order-cart-total button {
+  width: 150px;
+  border: 1px solid tomato;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.place-order-cart-total button:hover {
+  background-color: tomato;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .place-order {
+    display: flex;
+    flex-direction: column;
+  }
+}
